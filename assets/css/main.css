@@ -1,0 +1,28 @@
+.ui.footer{
+    margin-top: 10.5em !important;
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+    padding: 3em 0;
+}
+
+.btnmenu{
+    position: absolute;
+    right: -.5rem;
+    top:-.5rem;
+}
+
+.ui.card.chart{
+    width: 400px;
+}
+
+.pushable > .pusher{
+    padding-top: 1.5rem;
+}
+
+.ui.grid.container{
+    width: auto !important;
+}
+.ui.styled.accordion{
+    width: 750px;
+}

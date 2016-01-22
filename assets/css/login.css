@@ -1,0 +1,15 @@
+.pusher{
+    height: calc(100% - 13em);
+}
+
+.ui.grid.container{
+    height: 100%;
+}
+
+.ui.segment.form{
+    margin-top: 5%;
+}
+
+.ui.footer{
+    margin-top: 0 !important;
+}
