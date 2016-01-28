@@ -9,17 +9,30 @@ class BuscaBeneficiario extends CI_Controller {
 
     public function index()
     {
-        echo "Prueba";
+
     }
 
     public function buscarBeneficiario()
     {
-        $this->load->model('buscar_beneficiario');
-        $data['usuarios']  = $this->buscar_beneficiario->ObtenerTodos();
+        $data=array();
+        $query=$this->input->get('query',TRUE);
+        $query2=$this->input->get('query2',TRUE);
+        if ($query){
+            $this->load->model('buscar_beneficiario');
+            $data['usuarios']  = $this->buscar_beneficiario->ObtenerTodosNombre(trim($query));
 
-        // Cargar el view, y enviar los resultados
-        $this->load->view('buscaBeneficiario_view', $data);
+        }else if ($query2) {
+            $this->load->model('buscar_beneficiario');
+            $data['usuarios']  = $this->buscar_beneficiario->ObtenerTodosFolio(trim($query2));
+        }else {
+            $data['usuarios']=array('');
+        }
+
+
+      $this->load->view('paginas/buscaBeneficiario_view',$data);
     }
+
+
 
 
 }
