@@ -8,7 +8,7 @@ class Welcome extends Private_Controller {
 		*/
 		if(!@$this->user) redirect ('welcome/login');
 
-		$this->load->view('paginas/inicio');
+		$this->load->view('paginas/principal_view');
 	}
 
 	public function login() {

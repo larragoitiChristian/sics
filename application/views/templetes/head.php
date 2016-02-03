@@ -8,13 +8,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gerencial <?php echo $title?></title>
+    <title>SICS <?php echo $title?></title>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>window.jQuery || document.write(decodeURI('%3Cscript src="<?php echo ("/assets/js/jquery-2.1.4.min.js");?>"%3E%3C/script%3E'))</script>
-    <link href="<?php echo ("/assets/css/semantic.min.css");?>" rel="stylesheet">
-    <link href="<?php echo ("/assets/css/main.css");?>" rel="stylesheet">
-    <script type="text/javascript" src="<?php echo ('/assets/js/semantic.min.js') ?>"></script>
-    <script type="text/javascript" src="<?php echo ('/assets/js/jqx-all.js') ?>"></script>
+    <link href="<?php echo base_url("/assets/css/semantic.min.css");?>" rel="stylesheet">
+    <link href="<?php echo base_url("/assets/css/main.css");?>" rel="stylesheet">
+    <link href="<?php echo base_url("/assets/css/jquery-ui.css");?>" rel="stylesheet">
+    <script type="text/javascript" src="<?php echo base_url('/assets/js/semantic.min.js') ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('/assets/js/jqx-all.js') ?>"></script>
+
+
+
 
     <link rel="icon" href="../assets/img/favicon.png">
 
