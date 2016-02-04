@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
-    <link rel="icon" href="../assets/img/favicon.png">
+    <link rel="icon" href="<?php echo base_url("/assets/img/favicon.png");?>" >
 
 
     <?php

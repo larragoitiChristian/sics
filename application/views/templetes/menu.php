@@ -22,11 +22,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="item"><i class="bar chart icon"></i>
         Estadisticas
            <div class="menu">
-               <a class="item" href="<?php echo site_url('ao/ver/estadisticas')?>">Hoja Diaria</a>
+               <a class="item" href="<?php echo site_url('/estadistica/hojaDiaria')?>">Hoja Diaria</a>
                <a class="item" href="<?php echo site_url('/estadistica/siuve')?>">Suive</a>
                <a class="item" href="<?php echo site_url('ao/ver/estadisticas')?>">SIS</a>
                <a class="item" href="<?php echo site_url('ao/ver/foliosap')?>">Causes</a>
                <a class="item" href="<?php echo site_url('ao/ver/foliosap')?>">Reporte Consumibles</a>
+               <a class="item" href="<?php echo site_url('/estadistica/reporteMensualAtenMed')?>">Reporte Mensual Productividad</a>
            </div>
     </div>
     <div class="item"><i class="heartbeat icon"></i>
@@ -48,10 +49,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <a class="item" href="<?php echo site_url("configuraciones") ?>">
         <i class="upload icon"></i>
         Carga de Catalogos
-    </a>
-    <a class="item" href="<?php echo site_url("configuraciones") ?>">
-        <i class="database icon"></i>
-        Respaldo de Base de datos
     </a>
     <a class="item" href="<?php echo  site_url(("welcome/logout"));?>">
        Cerrar sesión

@@ -16,7 +16,7 @@ $this->load->view("templetes/head",$data);
 
     <div class="ui container">
         <form id="form" method="GET" action="<?=base_url()?>index.php/estadistica/siuve">
-        <div class="ui form">
+        <div class="ui segment form">
             <div class="fiels">
                 <h3 class="ui header">Seleccione Rancho de Fecha de Reporte</h3>
             </div>
@@ -38,6 +38,12 @@ $this->load->view("templetes/head",$data);
                         Buscar
                     </button>
                 </div>
+                <div class="six wide field"></div>
+                <div class="two wide field">
+                    <button class="circular ui icon button" type="button" value="Export to Excel" id='excelExport'>
+                        <i class="file excel outline icon"></i>
+                    </button>
+                </div>
             </div>
         </div>
         </form>
@@ -55,7 +61,6 @@ $this->load->view("templetes/head",$data);
         </div>
     </div>
 
-    <input type="button" value="Export to Excel" id='excelExport' />
 
     <script>
 
@@ -117,7 +122,7 @@ $this->load->view("templetes/head",$data);
 
             $tblDatos.jqxGrid(
                 {
-                    width: 1100,
+                    width: 1130,
                     source: dataAdapter,
                     columnsresize: true,
                     //pageable: true,
